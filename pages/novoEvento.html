@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        
+        <title>Novo evento</title>
+        <script defer src="../scripts/navBar.mjs"></script>
+        <script defer src="../scripts/interacao.js"></script>
+        <script defer src="../scripts/btnVoltar.js"></script>
+    </head>
+    
+    <body>
+        <header class="cabecalho-container novoPost-cabecalho">
+            <div class="cabecalho">
+                <h2 class="titulo-cabecalho">Gorillaz</h2>
+                <a class="ancora-noti" href=""><img class="icon-noti" src="../img/icons/notificacao.svg" alt=""></a>
+            </div>
+            <section class="nome-page nome-page-novoPost nome-page_post">
+                <button class="btn-voltar"><img src="../img/icons/left arrow.svg" alt=""></button>
+                <h1 class="titulo-page titulo-padrao">Novo evento</h1>
+                
+            </section>
+        </header>
+
+        <main>
+
+            <section class="container-novoPost">
+                <input type="text" placeholder="Digite um titulo" id="titulo-novoPost">
+                <input type="text" placeholder="Digite o conteudo..." id="conteudo-NovoPost">
+                <input type="text" placeholder="Endereço do evento" id="local-NovoPost">
+                
+                <div class="chek-container">
+                    <h2>Tipo de evento:</h2>
+                    <div class="container-chek-tipoEvento">
+                        <div class="check-esportes">
+                            <label for="esportes">Esportes</label>
+                            <input type="checkbox" name="esportes" id="check-esportes">
+                        </div>
+                        <div class="div-check-eventos">
+                            <label for="eventos">Festas</label>
+                            <input type="checkbox" name="eventos" id="check-eventos">
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="div-check-cadatroAlunos">
+                        <label for="cadastros">Deseja que os alunos se candidatem?</label>
+                        <input type="checkbox" name="cadastros" id="check-cadastros">  
+                    </div>
+                    
+                </div>
+                <div class="div-btn-novoPost">
+                    <button class="btn-novoPost-decartar">descartar</button>
+                    <button class="btn-novoPost-publicar">publicar</button>
+                </div>
+
+            </section>
+
+
+
+            <section class="nav-container">
+                <button id="btn-nav_home"><img src="../img/icons/home.svg" alt=""></button>
+                <button id="btn-nav_calendario"><img src="../img/icons/calendario.svg" alt=""></button>
+                
+                <button id="btn-nav_perfil"><img src="../img/icons/perfil.svg" alt=""></button>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>

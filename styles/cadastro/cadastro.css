@@ -1,0 +1,50 @@
+.cadatro_container{
+    display: flex;
+
+}
+
+.cadastro_msg{
+    font-size: 24px;
+    font-weight: 400;
+    width: 70vw;
+    
+}
+.cadastro_msg2{
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 8vw;
+    letter-spacing: 1px;
+}
+
+.titulo-cadastro{
+    margin-bottom: 25px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1024px){
+    .login_container-input {
+        width: 800px;
+        border-radius: 10px;
+        padding: 50px;
+        position: relative; /* Use relative instead of fixed to enable grid centering */
+        margin: 0;
+    }
+    .cadastro_msg2{
+        margin: 20px;
+    }
+    .cadastro_msg{
+        margin: 0;
+        width: 600px;
+    }
+    #registerButton{
+        margin: 0;
+        width: 300px;
+        align-self: center;
+    }
+
+}

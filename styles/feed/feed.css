@@ -1,0 +1,59 @@
+
+
+
+
+/**************************************************************************/
+/*menu amd*/
+
+.adm-section-container{
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.btn-mais-adm{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    align-self: end;
+}
+
+.btn-mais-adm img{
+    background-color: transparent;
+}
+
+/****************************************************************/
+
+
+.menu-adm-container{
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+}
+.menu-adm-container.show {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menu-adm-container a {
+    padding: 15px 0;
+    text-align: center;
+    
+    border-bottom: solid 2px var(--cor-input-destaque);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/***************************************************************************************/

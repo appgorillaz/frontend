@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Feed</title>
+    <script defer src="scripts/navBar.mjs"></script>
+    <script defer src="scripts/interacao.js"></script>
+    <script defer src="scripts/menu-adm.js"></script>
+    
+</head>
+
+<body>
+    <header class="cabecalho-container">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Gorillaz</h2>
+            <a class="ancora-noti" href=""><img class="icon-noti" src="../img/icons/notificacao.svg" alt=""></a>
+        </div>
+        <section class="nome-page">
+            <h1 class="titulo-page titulo-padrao">Feed</h1>
+            <div class="filtro-pages">
+                <button class="btns-filtro">Recente</button>
+                <button class="btns-filtro">Relevate</button>
+                <button class="btns-filtro">Esportes</button>
+                <button class="btns-filtro">Eventos</button>
+                <p class="trespontos">...</p>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <section class="container-cards">
+            <div class="card_post">
+                <h2 class="titulo_post">Atenção a matricula</h2>
+                <p class="data_post">Publicado em 13/11/99</p>
+                <p class="conteudo_post">Fique atento a data limite para rematricula</p>
+                
+                <div class="container-interacao">
+                    <button id="btn-interacao_like" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/coracao.svg" alt="">
+                        <p id="quant-like" class="quant-interacao">13</p>
+                    </button>
+                     <button id="btn-interacao_comentario" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/comentar.svg" alt="">
+                        <p class="quant-interacao">3</p>
+                    </button>
+                    <button id="btn-interacao_compartilhar" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/encaminhar.svg" alt="">
+                        <p class="quant-interacao">4</p>
+                    </button>
+                </div>
+            </div>
+            <div class="card_post">
+                <h2 class="titulo_post">Atenção a matricula</h2>
+                <p class="data_post">Publicado em 13/11/99</p>
+                <p class="conteudo_post">Fique atento a data limite para rematricula</p>
+                
+                <div class="container-interacao">
+                    <button id="btn-interacao_like" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/coracao.svg" alt="">
+                        <p class="quant-interacao">13</p>
+                    </button>
+                     <button id="btn-interacao_comentario" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/comentar.svg" alt="">
+                        <p class="quant-interacao">3</p>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="card_post">
+                <h2 class="titulo_post">Atenção a matricula</h2>
+                <p class="data_post">Publicado em 13/11/99</p>
+                <p class="conteudo_post">Fique atento a data limite para rematricula</p>
+                
+                <div class="container-interacao">
+                    <button id="btn-interacao_like" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/coracao.svg" alt="">
+                        <p class="quant-interacao">13</p>
+                    </button>
+                     <button id="btn-interacao_comentario" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/comentar.svg" alt="">
+                        <p class="quant-interacao">3</p>
+                    </button>
+                    <button id="btn-interacao_compartilhar" class="botao_interacao">
+                        <img class="icon-interacao" src="img/icons/encaminhar.svg" alt="">
+                        <p class="quant-interacao">4</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="adm-section-container">
+            <button class="btn-mais-adm"><img src="img/icons/Plus.svg" alt=""></button>
+            <div class="menu-adm-container">
+                <a href="pages/novoEvento.html">Novo evento</a>
+                <a href="pages/novoPost.html">Nova post</a>
+                
+            </div>
+        </section>
+        <section class="nav-container">
+            <button id="btn-nav_home"><img src="img/icons/home.svg" alt=""></button>
+            <button id="btn-nav_calendario"><img src="img/icons/calendario.svg" alt=""></button>
+            
+            <button id="btn-nav_perfil"><img src="img/icons/perfil.svg" alt=""></button>
+        </section>
+        
+        
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

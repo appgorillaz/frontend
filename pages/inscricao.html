@@ -1,0 +1,44 @@
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  
+
+  <title>formulario de inscrição</title>
+  <script defer src="../scripts/navBar.mjs"></script>
+  <script defer src="../scripts/interacao.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+        <h2 class="titulo-cabecalho">Gorillaz</h2>
+        <a class="ancora-noti" href=""><img class="icon-noti" src="../img/icons/notificacao.svg" alt=""></a>
+        </div>
+    </header>
+    <main>
+
+        <section class="inscricao-container">
+            <h1 class="titulo-padrao titulo-cadastro">Formulário de inscrição</h1>
+            <label class="label-padrao" for="nome">Nome</label>
+            <input class="input-padrao" type="text" name="nome" id="" required>
+            <label class="label-padrao" for="email">E-mail</label>
+            <input class="input-padrao" type="email" name="email" id="" required>
+            
+            <p id="error-message" class="error-message"></p>
+            <button class="btn-padrao" id="registerButton">Confirmar</button>
+        </section>
+        <section class="nav-container">
+            <button id="btn-nav_home"><img src="../img/icons/home.svg" alt=""></button>
+            <button id="btn-nav_calendario"><img src="../img/icons/calendario.svg" alt=""></button>
+            <button id="btn-nav_perfil"><img src="../img/icons/perfil.svg" alt=""></button>
+          </section>
+    </main>
+
+
+    <footer></footer>
+    
+</body>

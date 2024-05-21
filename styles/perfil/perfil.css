@@ -1,0 +1,119 @@
+
+.perfil-container{
+    margin-top: 200px;
+    color: var(--cor-fonte-primaria);
+}
+
+
+.foto-container {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-wrapper {
+    position: relative; /* torna o wrapper o contexto de posição para o lápis de edição */
+    display: flex; /* usa flexbox para posicionar o lápis de edição */
+    justify-content: center; /* centraliza o lápis de edição horizontalmente */
+    align-items: center; /* centraliza o lápis de edição verticalmente */
+}
+
+#foto-perfil-preview {
+    display: block; /* para que a imagem não tenha espaços em branco acima e abaixo */
+    max-width: 100%; /* garante que a imagem não ultrapasse o contêiner */
+    max-height: 100%; /* garante que a imagem não ultrapasse o contêiner */
+}
+
+.edit-icon {
+    position: absolute; /* posiciona o lápis de edição sobre a foto de perfil */
+    bottom: 5px;
+    right: 10px;
+    width: 5px; /* ajuste conforme necessário */
+    
+    cursor: pointer;
+    background-color: transparent;
+}
+.edit-icon img{
+    background-color: transparent;
+    width: 25px;
+}
+
+
+/*****************************************************/
+input[type="file"] {
+    
+    font-size: 0;
+    
+    height: 0;
+    
+    opacity: 0;
+    
+    width: 1px;
+    
+    cursor: pointer;
+}
+
+/*quem sou eu*/
+.container-info_perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-right: 10px;
+}
+
+.edit-icon-sobre img {
+    width: 25px;
+}
+.edit-icon-sobre.hidden{
+    display: none;
+}
+
+#quem-sou-eu-input,
+#curso-input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-left: 10px;
+}
+
+.semestre-select-container {
+    margin-top: 15px;
+}
+
+.semestre-select-container select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.semestre-select-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curso-sem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.info-sobre{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+

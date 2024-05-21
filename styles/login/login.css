@@ -1,0 +1,124 @@
+@import url(../style.css);
+
+
+
+.login_container-input{
+    display: flex;
+    flex-direction: column;
+    margin: 25vw 8vw 0 8vw;
+}
+
+.login_titulo{
+    font-size: 46px;
+    font-weight: var(--font-weight-titulo);
+    align-self: center;
+    width: 100%;
+
+    
+}
+.quebra{
+    margin: 0 0 10px 300px;
+    display: inline-block;
+    
+}
+
+.titulo-padrao{
+    font-weight: var(--font-weight-titulo);
+    font-size: 36px;
+    border-left: 4px solid var(--cor-fundo-secundaria) ;
+    padding-left: 5px;
+    
+}
+.login_container-input h2{
+    margin-bottom: 20px;
+}
+.label-padrao{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.input-padrao{
+    margin-bottom: 50px;
+    border: none;
+    background-color: var(--cor-input-destaque);
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn-padrao{
+    border: none;
+    background-color: var(--cor-fonte-primaria);
+    color: var(--cor-fundo-secundaria);
+    height: 9vw;
+    border-radius: 5px;
+    margin: 8vw 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.login_btn-senha{
+    color: #7e7e7e;
+    font-size: 15px;
+    margin-bottom: 8vw;
+
+
+}
+.botao-padrao2{
+    margin: 10px 0;
+    background-color: var(--cor-fundo-secundaria);
+    padding: 1px ;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+
+}
+.botao-padrao2, .btn-padrao{
+    max-width: 860px;
+}
+
+
+@media (min-width: 1024px){
+    .tela-container-main {
+        font-size: 18px;
+        background-color: #3d3d4d8f;
+        display: grid;
+        place-items: center; /* Centraliza horizontalmente e verticalmente */
+        height: 100vh;   
+        margin: 0;    /* Garante que o container ocupe toda a altura da tela */
+    }
+    
+    .login_container-input {
+        width: 800px;
+        border-radius: 10px;
+        padding: 50px;
+        position: relative; /* Use relative instead of fixed to enable grid centering */
+        margin: 0;
+    }
+    
+    
+    
+    
+
+    .input-padrao .login_input {
+        width: 100%;
+        height: 50px;
+        max-height: 50px;
+    }
+    .login_btn-entrar,.login_btn-cadastro{
+        width: 300px;
+        align-self: center;
+    }
+    .login_paragrafo, .login_btn-senha{
+        text-align: center;
+        margin: 0;
+    }
+    .login_container-input h2{
+        width: 300px;
+        margin-left: 0;
+    }
+    
+    
+}

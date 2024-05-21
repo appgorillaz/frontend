@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(login/login.css);
+@import url(cadastro/cadastro.css);
+@import url(header.css);
+@import url(cardPost/card.css);
+@import url(navBar.css);
+@import url(post/post.css);
+@import url(calendario/calendario.css);
+@import url(inscricao/inscricao.css);
+@import url(novoPost/novoPost.css);
+@import url(feed/feed.css);
+@import url(perfil/perfil.css);
+
+
+
+
+
+
+:root{
+    --cor-fundo: #fefefe;
+    --cor-fundo-secundaria: #d0dcff;
+    --cor-fonte-primaria: #161654;
+    --cor-input-destaque: #eeeeee;
+    --font-principal: "Roboto", sans-serif;
+    --font-weight-titulo: 700;
+
+}
+
+
+*{
+   background-color: var(--cor-fundo);
+   color: var(--cor-fonte-primaria); 
+   font-family: var(--font-principal);
+   font-size: 1rem;
+   
+}
+

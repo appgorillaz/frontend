@@ -1,0 +1,66 @@
+.cabecalho-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+  
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 10px;
+    align-items: center;
+    
+}
+.titulo-cabecalho{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--font-principal);
+    
+}
+
+.icon-noti{
+    width: 24px;
+}
+.nome-page{
+    background-color: var(--cor-fonte-primaria);
+    padding: 20px 10px 10px 30px;
+    border-radius: 0 0 10px 10px ;
+    
+    
+}
+
+
+
+.titulo-page{
+    background-color: var(--cor-fonte-primaria);
+    color: var(--cor-fundo);
+    font-family: var(--font-principal);
+
+}
+
+.filtro-pages{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-fonte-primaria);
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.btns-filtro{
+    background-color: var(--cor-fonte-primaria);
+    color: var(--cor-fundo-secundaria);
+    border: none;
+
+}
+
+.trespontos{
+    rotate: 90deg;
+    color: var(--cor-fundo-secundaria);
+    background-color: transparent;
+    justify-self: flex-end;
+    font-size: 22px;
+    font-weight: 600;
+}

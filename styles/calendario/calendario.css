@@ -1,0 +1,266 @@
+.container-page-calendario{
+  margin-top: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/*calendario........................................*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+.titulo-page-calendario{
+  font-size: 22px;
+  background-color: transparent;
+  color: var(--cor-fundo);
+  font-family: var(--font-principal);
+  font-weight: bold;
+  width: 150px;
+  margin: 20px 0;
+  
+}
+
+.calendario-container{
+  background-color: var(--cor-fundo-secundaria);
+  font-family: var(--font-principal);
+  width: 85vw;
+  min-width: 330px ;
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  max-width: 600px;
+}
+#monthDisplay{
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-backnext{
+  display: flex;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.button-backnext button{
+  width: 30px;
+  cursor: pointer;
+  
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  
+  
+}
+
+#header {
+  padding: 10px;
+  color: var(--header-color) ;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+#container {
+  width: 330px;
+  background-color: transparent;
+  align-self: center;
+  margin: auto;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  font-weight: bold;
+  margin-bottom: 5px;
+  
+  
+}
+#weekdays div {
+  width: 35px;
+  padding: 5px;
+  background-color: transparent;
+  border-bottom: solid 1px #161654;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.day {
+  width: 35px;
+  padding: 5px;
+  height: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+
+/*------------------------------------------------*/
+/* Modal Styles */
+/*------------------------------------------------*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  font-size: 20px;
+}
+
+.header-modal{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.data-modal-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.modal-content {
+  height: 500px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--font-principal);
+}
+
+
+.container-evento-modal-conteudo{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.btn-participar-modal{
+  width: 40vw;
+  background-color: var(--cor-fonte-primaria);
+  color: var(--cor-fundo);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: auto;
+  
+}
+.btn-participar-modal img{
+  background-color: transparent;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
+/*------------------------------------------------*/
+/*filtro*/
+/*------------------------------------------------*/
+.filtro-calendario{
+  width: 90vw;
+  max-width: 600px;
+  background-color: var(--cor-fundo-secundaria);
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-filtro-calen{
+  width: 30%;
+  font-family: var(--font-principal);
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+/*------------------------------------------------*/
+/*mostrar eventos*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+.mostrar-eventos-container{
+  margin-bottom: 150px;
+}
+.mostrar-evento-div{
+  background-color: var(--cor-fundo-secundaria);
+  width: 90vw;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-principal);
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mostrar-evento_data{
+  background-color: transparent;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.mostrar-evento_conteudo{
+  background-color: transparent;
+  
+}
+
+
+
+.mostrar-evento_dia{
+  background-color: var(--cor-fonte-primaria);
+  color: var(--cor-fundo);
+  padding: 10px;
+  border-radius: 60px;
+  margin: 5px;
+}
+
+.mostrar-evento_titulo{
+  font-weight: bold;
+  margin-bottom: 10px;
+}

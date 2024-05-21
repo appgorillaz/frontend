@@ -1,0 +1,75 @@
+
+
+.inscricao-container{
+    display: flex;
+    flex-direction: column;
+    margin: 25vw 8vw 0 8vw;
+}
+
+.login_titulo{
+    font-size: 46px;
+    font-weight: var(--font-weight-titulo);
+    align-self: center;
+    width: 100%;
+    
+}
+.quebra{
+    margin: 0 0 10px 300px;
+    display: inline-block;
+    
+}
+
+.titulo-padrao{
+    font-weight: var(--font-weight-titulo);
+    font-size: 28px;
+    border-left: 4px solid var(--cor-fundo-secundaria) ;
+    padding-left: 5px;
+    
+}
+
+.label-padrao{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.input-padrao{
+    margin-bottom: 30px;
+    border: none;
+    background-color: var(--cor-input-destaque);
+    height:40px;
+    border-radius: 5px;
+}
+
+.btn-padrao{
+    border: none;
+    background-color: var(--cor-fonte-primaria);
+    color: var(--cor-fundo-secundaria);
+    height: 42px;
+    border-radius: 5px;
+    margin:20px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.login_btn-senha{
+    color: #7e7e7e;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+
+}
+.botao-padrao2{
+    margin: 20px 0;
+    background-color: var(--cor-fundo-secundaria);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+
+.botao-padrao2, .btn-padrao{
+    max-width: 860px;
+}

@@ -1,0 +1,72 @@
+.cabecalho{
+    height: 30px;
+}
+.nome-page_post{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    
+    
+    padding-left: 20px;
+}
+.btn-voltar{
+    background-color: transparent;
+    border: none;
+
+}
+.btn-voltar img{
+    background-color: transparent;
+    
+}
+
+.container-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(5vw + 193px);
+    margin-bottom: 20vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.add-comen_post{
+    display: flex;
+    flex-direction: column;
+    margin: 5vw 0;
+}
+.add-comen_post input{
+    background-color: var(--cor-input-destaque);
+    border: none;
+    height: 60px;
+    width: 100%;
+    margin: 2vw 0;
+    border-radius: 10px;
+}
+.Publicar{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vw;
+}
+.Publicar button{
+    border: none;
+    
+    background-color: var( --cor-fonte-primaria);
+    color: var(--cor-fundo);
+    padding: 1vw 2vw;
+
+    border-radius: 5px;
+    align-self: flex-end;
+}
+.perfil-comentario_post{
+    display: flex;
+    gap: 2vw;
+}
+.comentario-publicado_post{
+    margin-bottom: 5vw;
+}
+.texto-comentario_perfil_post{
+    background-color: var(--cor-input-destaque);
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 5px;
+}
