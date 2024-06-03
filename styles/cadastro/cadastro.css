@@ -28,7 +28,7 @@
 
 @media (min-width: 1024px){
     .login_container-input {
-        width: 800px;
+       width: 600px;
         border-radius: 10px;
         padding: 50px;
         position: relative; /* Use relative instead of fixed to enable grid centering */

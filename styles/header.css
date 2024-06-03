@@ -27,12 +27,14 @@
 }
 .nome-page{
     background-color: var(--cor-fonte-primaria);
-    padding: 20px 10px 10px 30px;
+    border: none;
     border-radius: 0 0 10px 10px ;
     
     
 }
-
+.nome-page-feed {
+    padding: 20px 10px 10px ;
+}
 
 
 .titulo-page{
@@ -63,4 +65,58 @@
     justify-self: flex-end;
     font-size: 22px;
     font-weight: 600;
+}
+.menu-desk-nav{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .cabecalho{
+        display: none;
+    }
+    .nome-menu-desk_container{
+        display: flex;
+        justify-content: center;
+        gap: 250px;
+        
+        background-color: transparent;
+        
+        
+    }
+    .menu-desk-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 25px;
+
+        background-color: transparent;
+    }
+    .menu-desk-nav button{
+        background-color: transparent;
+        color: var(--cor-fundo);
+        border: none;
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+        
+    }
+    #btn-nav-desk_home:hover,
+    #btn-nav-desk_calendario:hover,
+    #btn-nav-desk_perfil:hover{
+        scale: 1.2;
+        
+    }
+    .filtro-pages{
+        border-top: solid 5px rgba(128, 128, 128, 0.288);
+        justify-content: center;
+        margin-top: 20px;
+        
+        padding: 0;
+        padding-top: 10px;
+        gap: 30px;
+    }
+    .trespontos{
+        display: none;
+    }
 }

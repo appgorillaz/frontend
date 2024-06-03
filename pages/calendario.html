@@ -21,102 +21,109 @@
         <h2 class="titulo-cabecalho">Gorillaz</h2>
         <a class="ancora-noti" href=""><img class="icon-noti" src="../img/icons/notificacao.svg" alt=""></a>
     </div>
-    <section class="nome-page">
-        <h1 class=" titulo-padrao titulo-page-calendario">Calendário de eventos</h1>
+    <section class="nome-page  page-calendario">
+      <div class="nome-menu-desk_container">
+        <h1 class="titulo-page titulo-page-calendario  titulo-padrao">Calendário de eventos</h1>
+        <div class="menu-desk-nav">
+            <button id="btn-nav-desk_home">Home</button>
+            <button id="btn-nav-desk_calendario">Calendario</button>
+            <button id="btn-nav-desk_perfil">Perfil</button> 
+        </div>
         
     </section>
 
 </header>
   <main class="container-page-calendario">
-    <section class="calendario-container">
-      <div id="container">
-          <div id="header">
-            <div id="monthDisplay"></div>
+    <div class="container-desk-calen-even">
+      <section class="calendario-container">
+        <div id="container">
+            <div id="header">
+              <div id="monthDisplay"></div>
 
-            <div class="button-backnext">
-              <button id="backButton"><</button>
-              <button id="nextButton">></button>
+              <div class="button-backnext">
+                <button id="backButton"><</button>
+                <button id="nextButton">></button>
+              </div>
+                
             </div>
-              
-          </div>
 
-          <div id="weekdays">
-            <div>Dom</div>
-            <div>Seg</div>
-            <div>Ter</div>
-            <div>Qua</div>
-            <div>Qui</div>
-            <div>Sex</div>
-            <div>Sáb</div>
-          </div>
+            <div id="weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sáb</div>
+            </div>
 
 
-          <!-- div dinamic -->
-          <div id="calendar" ></div>
+            <!-- div dinamic -->
+            <div id="calendar" ></div>
 
-      
-      </div>
-
-      <div id="modal" class="modal">
         
-        <div class="modal-content">
-          <div class="header-modal">
-            <span class="close-button"><img src="../img/icons/seta-azul.svg" alt=""></span>
-            <h2 class="titulo-modal">titulo evento</h2>
-          </div>
-          <div class="data-modal-container">
-            <img src="../img/icons/calendario-icon-modal.svg" alt="">
-            <h2 id="eventDate"></h2>
-          </div>
-          <div class="container-evento-modal-conteudo"> 
-            <div id="events"></div>
+        </div>
+
+        <div id="modal" class="modal">
           
-            <button class="btn-participar-modal">Participar<img src="../img/icons/participar-icon.svg"></button>
-          </div>  
-        </div>
-      </div> 
+          <div class="modal-content">
+            <div class="header-modal">
+              <span class="close-button"><img src="../img/icons/seta-azul.svg" alt=""></span>
+              <h2 class="titulo-modal">titulo evento</h2>
+            </div>
+            <div class="data-modal-container">
+              <img src="../img/icons/calendario-icon-modal.svg" alt="">
+              <h2 id="eventDate"></h2>
+            </div>
+            <div class="container-evento-modal-conteudo"> 
+              <div id="events"></div>
+            
+              <button class="btn-participar-modal">Participar<img src="../img/icons/participar-icon.svg"></button>
+            </div>  
+          </div>
+        </div> 
 
+        
+
+        
+      </section>
       
-
       
-    </section>
-    
-    
-    
-    <section class="filtro-calendario">
-      <button class="btn-filtro-calen">Proximos eventos</button>
-      <button class="btn-filtro-calen">Esportes</button>
-      <button class="btn-filtro-calen">Eventos</button>
-    </section>
+      <div class="container-desk-eventos">
+        <section class="filtro-calendario">
+          <button class="btn-filtro-calen">Proximos eventos</button>
+          <button class="btn-filtro-calen">Esportes</button>
+          <button class="btn-filtro-calen">Eventos</button>
+        </section>
 
 
 
-    <section class="mostrar-eventos-container">
-      <div class="mostrar-evento-div">
-        <div class="mostrar-evento_data">
-          <p class="mostrar-evento_dia">8</p>
-          <p class="mostrar-evento_mes">jan</p>
-        </div>
-        <div class="mostrar-evento_conteudo">
-          <p class="mostrar-evento_titulo">Treino de fut</p>
-          <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
-        </div>
+        <section class="mostrar-eventos-container">
+          <div class="mostrar-evento-div">
+            <div class="mostrar-evento_data">
+              <p class="mostrar-evento_dia">8</p>
+              <p class="mostrar-evento_mes">jan</p>
+            </div>
+            <div class="mostrar-evento_conteudo">
+              <p class="mostrar-evento_titulo">Treino de fut</p>
+              <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
+            </div>
+          </div>
+          <div class="mostrar-evento-div">
+            <div class="mostrar-evento_data">
+              <p class="mostrar-evento_dia">8</p>
+              <p class="mostrar-evento_mes">jan</p>
+            </div>
+            <div class="mostrar-evento_conteudo">
+              <p class="mostrar-evento_titulo">Treino de fut</p>
+              <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
+            </div>
+          </div>
+
+
+        </section>
       </div>
-      <div class="mostrar-evento-div">
-        <div class="mostrar-evento_data">
-          <p class="mostrar-evento_dia">8</p>
-          <p class="mostrar-evento_mes">jan</p>
-        </div>
-        <div class="mostrar-evento_conteudo">
-          <p class="mostrar-evento_titulo">Treino de fut</p>
-          <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
-        </div>
-      </div>
-
-
-    </section>
-
-
+  </div>
 
 
 

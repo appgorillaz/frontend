@@ -85,13 +85,13 @@
         font-size: 18px;
         background-color: #3d3d4d8f;
         display: grid;
-        place-items: center; /* Centraliza horizontalmente e verticalmente */
+        place-items: center;
         height: 100vh;   
         margin: 0;    /* Garante que o container ocupe toda a altura da tela */
     }
     
     .login_container-input {
-        width: 800px;
+        max-width: 600px;
         border-radius: 10px;
         padding: 50px;
         position: relative; /* Use relative instead of fixed to enable grid centering */

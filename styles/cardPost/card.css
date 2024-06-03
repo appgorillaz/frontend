@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    margin-bottom: 20vw;
+    margin-bottom: 70px;
     
 }
 
@@ -11,12 +11,12 @@
 
 .card_post{
     background-color: var(--cor-fundo-secundaria);
-    min-height: 60vw;
+    min-height: 50px;
     max-width: 600px;
     max-height: 450px;
-    width: 85vw;
-    margin: 4vw 0;
-    padding: 8vw 4vw 4vw 4vw;
+    width: 80vw;
+    margin: 15px 0px;
+    padding: 30px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -37,8 +37,9 @@
 }
 
 .conteudo_post{
-    margin: 8vw 0;
+    margin: 40px 0;
     background-color: transparent;
+    word-break: break-all;
     
 }
 
@@ -62,6 +63,13 @@
 .botao_interacao img ,p{
     background-color: transparent;
     margin: 1vw;
+}
+
+@media (min-width: 1024px){
+    .container-cards{
+        margin: 0;
+        margin-top: 120px;
+    }
 }
 
 

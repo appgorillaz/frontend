@@ -17,3 +17,17 @@
 .nav-container button img{
     width: 25px;
 }
+
+@media (min-width: 1024px){
+    .nav-container{
+        display: none;
+        
+    }
+    .container-page-calendario{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+
+}

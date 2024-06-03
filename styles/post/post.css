@@ -23,29 +23,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: calc(5vw + 193px);
-    margin-bottom: 20vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:30px;
+    margin-right: 30px;
 }
 
 .add-comen_post{
     display: flex;
     flex-direction: column;
-    margin: 5vw 0;
+    margin: 20px 0;
 }
 .add-comen_post input{
     background-color: var(--cor-input-destaque);
     border: none;
     height: 60px;
     width: 100%;
-    margin: 2vw 0;
+    margin: 20px 0;
     border-radius: 10px;
 }
 .Publicar{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5vw;
+    margin-bottom: 50px;
 }
 .Publicar button{
     border: none;
@@ -59,7 +59,7 @@
 }
 .perfil-comentario_post{
     display: flex;
-    gap: 2vw;
+    gap: 10px;
 }
 .comentario-publicado_post{
     margin-bottom: 5vw;
@@ -69,4 +69,26 @@
     padding: 2vw;
     margin-bottom: 2vw;
     border-radius: 5px;
+}
+@media (min-width: 1024px){
+    .container-post{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    }
+    
+    .container-post-visitado{
+        margin: 20px;
+        width: 45%;
+    }
+    .comentarios-container_post{
+        width: 35%;
+        margin:100px 0px;
+        padding-left: 30px;
+        border-left: solid rgba(128, 128, 128, 0.346) 5px;
+    }
 }
