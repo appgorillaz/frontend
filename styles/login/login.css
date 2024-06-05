@@ -5,7 +5,7 @@
 .login_container-input{
     display: flex;
     flex-direction: column;
-    margin: 25vw 8vw 0 8vw;
+    margin: 9vw 8vw 0 8vw;
 }
 
 .login_titulo{
@@ -86,7 +86,7 @@
         background-color: #3d3d4d8f;
         display: grid;
         place-items: center;
-        height: 100vh;   
+        padding: 40px 0px;
         margin: 0;    /* Garante que o container ocupe toda a altura da tela */
     }
     

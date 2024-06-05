@@ -21,12 +21,54 @@
 
             <label class="label-padrao" for="nome">Nome</label>
             <input class="input-padrao" type="text" name="nome"  required>
+
             <label class="label-padrao" for="email">E-mail</label>
             <input class="input-padrao" type="email" name="email"  required>
+
+            <label class="label-padrao" for="ra">RA</label>
+            <input class="input-padrao" type="text" name="ra" maxlength="13" required>
+
+            <label class="label-padrao" for="genero">Gênero</label>
+            <select class="input-padrao" name="genero" id="genero" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+            
+            <label class="label-padrao" for="curso">Curso</label>
+            <select class="input-padrao" name="curso" id="curso" required>
+                <option value="Gestão Empresarial">Gestão Empresarial</option>
+                <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
+                <option value="Desenvolvimento de Software Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
+                <option value="Ciência de Dados">Ciência de Dados</option>
+                <option value="Comércio Exterior">Comércio Exterior</option>
+                <option value="Design de Produto">Design de Produto</option>
+            </select>
+
+            <label class="label-padrao" for="periodo">Período</label>
+            <select class="input-padrao" name="periodo" id="periodo" required>
+                <option value="Matutino">Matutino</option>
+                <option value="Noturno">Noturno</option>
+            </select>
+
+            <label class="label-padrao" for="semestre">Semestre</label>
+            <select class="input-padrao" name="semestre" id="semestre" required>
+                <option value="1">1º</option>
+                <option value="2">2º</option>
+                <option value="3">3º</option>
+                <option value="4">4º</option>
+                <option value="5">5º</option>
+                <option value="6">6º</option>
+            </select>
+
+            <label class="label-padrao" for="is_representative">É representante de classe?</label>
+            <input class="input-padrao" type="checkbox" name="is_representative" id="check-representative">  
+
             <label class="label-padrao" for="senha">Senha</label>
             <input class="input-padrao" type="password" name="senha"  required>
+            
             <label class="label-padrao" for="senha-con">Confirmar senha</label>
             <input class="input-padrao" type="password" name="senha-con"  required>
+
             <button class="btn-padrao" id="registerButton">Registrar</button>
             <p id="error-message" class="error-message"></p>
             
