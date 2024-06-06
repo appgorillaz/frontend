@@ -25,6 +25,10 @@
     margin-top: 10px;
 }
 
+#check-representative {
+    margin-right: auto;
+    width: 30px;
+}
 
 @media (min-width: 1024px){
     .login_container-input {
