@@ -96,18 +96,24 @@ document
       is_representative,
     };
 
-    console.log(data);
-
     axios
       .post("http://localhost:8081/users/register", data)
       .then((res) => {
-        console.log(res);
-        // alert("Usuário cadastrado com sucesso!");
-        // window.location.href = "/login";
+        Toastify({
+          text: "Cadastro realizado com sucesso!",
+
+          duration: 2000,
+        }).showToast();
+        setTimeout(() => {
+          window.location.href = "./login.html";
+        }, 2000);
       })
       .catch((err) => {
-        console.log(err);
-        // alert("Erro ao cadastrar usuário.");
+        Toastify({
+          text: `Erro: ${err.response.data}`,
+
+          duration: 2000,
+        }).showToast();
       });
   });
 
