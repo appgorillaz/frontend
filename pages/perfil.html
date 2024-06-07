@@ -32,7 +32,7 @@
         
         </header>
 
-        <main>
+        <main class="main-perfil">
             <section class="perfil-container">
                 <div class="perfil-info">
                     <div class="foto-container">
@@ -58,30 +58,49 @@
                                 </div>
                             </div>  
                         </div>
-                        <!-- Campo de texto para o curso -->
-                        <div class="curso-sem-container">
-                            <div class="info info-curso">
-                            <p id="curso-texto">Curso</p>
-                            <div class="edit-curso">
-                                <input type="text" id="curso-input" style="display: none;">
-                                <div class="edit-icon-sobre" id="edit-curso">
-                                    <img src="../img/icons/Edit.svg" alt="Editar">
-                                </div>
-                            </div>
-                            </div>
-                            <div class="semestre-select-container">
-                                <label for="semestre">Selecione o semestre:</label>
-                                <select id="semestre">
-                                    <option value=""></option>
-                                    <option value="1">1º semestre</option>
-                                    <option value="2">2º semestre</option>
-                                    <option value="3">3º semestre</option>
-                                    <option value="4">4º semestre</option>
-                                    <option value="5">5º semestre</option>
-                                    <option value="6">6º semestre</option>
+                        <section class="section-inputs-perfil">
+                            <label class="label-padrao" for="nome">Nome</label>
+                            <input class="input-padrao input-perfil" type="text" name="nome"  required>
+
+                            <label class="label-padrao" for="email">E-mail</label>
+                            <input class="input-padrao input-perfil" type="email" name="email"  required>
+
+                            <label class="label-padrao" for="ra">RA</label>
+                            <input class="input-padrao input-perfil" type="text" name="ra" maxlength="13" required>
+
+                            <label class="label-padrao" for="genero">Gênero</label>
+                            <select class="input-padrao input-perfil" name="genero" id="genero" required>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                            </select>
+                            <div class="curso-sem-container">
+                                <select class="input-padrao curso-perfil" name="curso" id="curso" required>
+                                    <option value="Gestão Empresarial">Gestão Empresarial</option>
+                                    <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
+                                    <option value="Desenvolvimento de Software Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
+                                    <option value="Ciência de Dados">Ciência de Dados</option>
+                                    <option value="Comércio Exterior">Comércio Exterior</option>
+                                    <option value="Design de Produto">Design de Produto</option>
+                                </select>
+                                <select class="input-padrao curso-perfil" name="semestre" id="semestre" required>
+                                    <option value="1">1° semestre</option>
+                                    <option value="2">2° semestre</option>
+                                    <option value="3">3° semestre</option>
+                                    <option value="4">4° semestre</option>
+                                    <option value="5">5° semestre</option>
+                                    <option value="6">6° semestre</option>
                                 </select>
                             </div>
-                        </div>
+                            <label class="label-padrao" for="periodo">Período</label>
+                            <select class="input-padrao input-perfil" name="periodo" id="periodo" required>
+                                <option value="Matutino">Matutino</option>
+                                <option value="Noturno">Noturno</option>
+                            </select>
+                            <a href="#" class="login_btn-senha">Alterar a senha</a>
+                           
+                        </section>
+                    </div>
+                    
                         
                     </div>
                 </div>
@@ -102,7 +121,20 @@
                 <button id="btn-nav_perfil"><img src="../img/icons/perfil.svg" alt=""></button>
             </section>
         </main>
-        <footer>
+        <footer class="rodape">
+            <div class="container-redes-rodape">
+                <h3 class="titulo-rodape-redes">Nossas redes</h3>
+                <div class="div-img-redes">
+                    <a href="https://www.instagram.com/atleticafateccotia/"><img src="../img/icons/Instagram.svg"></a>
+                    <a href="https://www.facebook.com/atleticafateccotia"><img src="../img/icons/Facebook.svg"></a>
+                    <a href="https://www.linkedin.com/company/atl%C3%A9tica-fatec-cotia/"><img src="../img/icons/LinkedIn.svg"></a>
+                </div>
+            </div>
+
+            <div>
+                
+            </div>
+            <p class="copy-rodape">₢Copyright 2023 Gorillaz all Rights Reserved</p>
 
         </footer>
     </body>

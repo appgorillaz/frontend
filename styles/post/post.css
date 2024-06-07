@@ -27,6 +27,7 @@
     margin-bottom: 50px;
     margin-left:30px;
     margin-right: 30px;
+    
 }
 
 .add-comen_post{
@@ -52,7 +53,7 @@
     
     background-color: var( --cor-fonte-primaria);
     color: var(--cor-fundo);
-    padding: 1vw 2vw;
+    padding: 8px 20px;
 
     border-radius: 5px;
     align-self: flex-end;
@@ -62,24 +63,35 @@
     gap: 10px;
 }
 .comentario-publicado_post{
-    margin-bottom: 5vw;
+    margin-bottom: 30px;
 }
 .texto-comentario_perfil_post{
     background-color: var(--cor-input-destaque);
-    padding: 2vw;
-    margin-bottom: 2vw;
+    padding: 8px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
+.comentarios-container_post{
+    width: 100%;
+}
+
 @media (min-width: 1024px){
+   
     .container-post{
     display: flex;
     flex-direction: row;
     margin: 0;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 30px;    
     
+
     }
+    .div-container-main{
+        min-height: 87vh;
+    }
+    
+    
     
     .container-post-visitado{
         margin: 20px;

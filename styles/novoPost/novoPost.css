@@ -1,4 +1,6 @@
-
+.nome-menu-desk_container{
+    background-color: transparent;
+}
 
 .nome-page-novoPost{
     padding: 0;
@@ -14,7 +16,7 @@
 }
 
 #titulo-novoPost,#conteudo-NovoPost,#local-NovoPost{
-    width: 80vw;
+    width: 600px;
     max-width: 500px;
     background-color: var(--cor-input-destaque);
     border: none;
@@ -36,7 +38,7 @@
     padding: 10px 10px 200px 10px;
     
 }
-#conteudo-NovoPost.#local-NovoPost
+#conteudo-NovoPost,#local-NovoPost
 ::placeholder{
     text-align: start;
 
@@ -56,6 +58,7 @@
     margin: 10px 0;
     
 }
+
 
 .div-btn-novoPost{
     display: flex;
