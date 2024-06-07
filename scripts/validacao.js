@@ -22,43 +22,66 @@ document
     const semestre = document.querySelector('select[name="semestre"]').value;
     const senha = document.querySelector('input[name="senha"]').value;
     const senhaCon = document.querySelector('input[name="senha-con"]').value;
-    const errorMessage = document.getElementById("error-message");
 
-    errorMessage.textContent = "";
+    const msgErroNome = document.getElementById("error-message-name");
+    const msgErroEmail = document.getElementById("error-message-email");
+    const msgErroSenha = document.getElementById("error-message-password");
+    const msgErroSenhaCon = document.getElementById(
+      "error-message-passwordConfirm"
+    );
+    const msgErroRa = document.getElementById("error-message-ra");
 
-    if (
-      !nome ||
-      !email ||
-      !ra ||
-      !genero ||
-      !curso ||
-      !semestre ||
-      !periodo ||
-      !senha ||
-      !senhaCon
-    ) {
-      errorMessage.textContent = "Todos os campos são obrigatórios.";
+    const inputs = [
+      {
+        element: nome,
+        errorMessage: msgErroNome,
+        message: "Nome é obrigatório.",
+      },
+      {
+        element: email,
+        errorMessage: msgErroEmail,
+        message: "Email é obrigatório.",
+      },
+      {
+        element: senha,
+        errorMessage: msgErroSenha,
+        message: "Senha é obrigatória.",
+      },
+      {
+        element: senhaCon,
+        errorMessage: msgErroSenhaCon,
+        message: "Confirmação de senha é obrigatória.",
+      },
+    ];
+
+    inputs.forEach(({ element, errorMessage, message }) => {
+      if (!element) {
+        errorMessage.textContent = message;
+      } else {
+        errorMessage.textContent = "";
+      }
+    });
+
+    if (inputs.some(({ errorMessage }) => errorMessage.textContent !== "")) {
       return;
     }
 
     if (!validateEmail(email)) {
-      errorMessage.textContent = "E-mail inválido.";
-      return;
+      return (msgErroEmail.textContent = "E-mail inválido.");
     }
 
-    if (!validateRA(ra)) {
-      errorMessage.textContent = "RA contem letras ou não tem 13 caracteres.";
-      return;
+    if (ra && !validateRA(ra)) {
+      return (msgErroRa.textContent =
+        "RA contem letras ou não tem 13 caracteres.");
     }
 
     if (senha.length < 6) {
-      errorMessage.textContent = "A senha deve ter pelo menos 6 caracteres.";
-      return;
+      return (msgErroSenha.textContent =
+        "A senha deve ter pelo menos 6 caracteres.");
     }
 
     if (senha !== senhaCon) {
-      errorMessage.textContent = "As senhas não coincidem.";
-      return;
+      return (msgErroSenhaCon.textContent = "As senhas não coincidem.");
     }
 
     const data = {
@@ -74,7 +97,18 @@ document
     };
 
     console.log(data);
-    // Aqui você pode adicionar o código para enviar os dados para o servidor
+
+    axios
+      .post("http://localhost:8081/users/register", data)
+      .then((res) => {
+        console.log(res);
+        // alert("Usuário cadastrado com sucesso!");
+        // window.location.href = "/login";
+      })
+      .catch((err) => {
+        console.log(err);
+        // alert("Erro ao cadastrar usuário.");
+      });
   });
 
 const validateEmail = (email) => {

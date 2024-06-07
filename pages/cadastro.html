@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>cadastro</title>
 </head>
 
@@ -19,16 +19,26 @@
             <p class="cadastro_msg2">é gratis :)</p>
             <h1 class="titulo-padrao titulo-cadastro">Cadastre-se</h1>
 
-            <label class="label-padrao" for="nome">Nome</label>
+            <div class="required_input-div">
+                <p id="error-message-name" class="error-message"></p>
+                <label class="label-padrao" for="nome">Nome</label>
+            </div>
             <input class="input-padrao" type="text" name="nome"  required>
 
-            <label class="label-padrao" for="email">E-mail</label>
+            <div class="required_input-div">
+                <p id="error-message-email" class="error-message"></p>
+                <label class="label-padrao" for="email">E-mail</label>
+            </div>
             <input class="input-padrao" type="email" name="email"  required>
 
-            <label class="label-padrao" for="ra">RA</label>
+            <div class="required_input-div">
+                <p id="error-message-ra" class="error-message"></p>
+                <label class="label-padrao" for="ra">RA</label>
+            </div>
             <input class="input-padrao" type="text" name="ra" maxlength="13" required>
 
-            <label class="label-padrao" for="genero">Gênero</label>
+            
+            <label class="label-padrao" for="genero">Gênero</label> 
             <select class="input-padrao" name="genero" id="genero" required>
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>
@@ -63,10 +73,16 @@
             <label class="label-padrao" for="is_representative">É representante de classe?</label>
             <input class="input-padrao" type="checkbox" name="is_representative" id="check-representative">  
 
-            <label class="label-padrao" for="senha">Senha</label>
+            <div class="required_input-div">
+                <p id="error-message-password" class="error-message"></p>
+                <label class="label-padrao" for="senha">Senha</label>
+            </div>           
             <input class="input-padrao" type="password" name="senha"  required>
             
-            <label class="label-padrao" for="senha-con">Confirmar senha</label>
+            <div class="required_input-div">
+                <p id="error-message-passwordConfirm" class="error-message"></p>
+                <label class="label-padrao" for="senha-con">Confirmar senha</label>
+            </div>         
             <input class="input-padrao" type="password" name="senha-con"  required>
 
             <button class="btn-padrao" id="registerButton">Registrar</button>
