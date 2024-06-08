@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Login</title>
-    <script defer src="../scripts/login.js"></script>
 </head>
 
 <body>
@@ -21,20 +21,28 @@
                 <h2 class="login_titulo quebra">de volta :)</h2>
             </div>
                 <h2 class="titulo-login" >Login</h2>
+
+            <div class="required_input-div">
+                <p id="error-message-email" class="error-message"></p>
+                <label class="login_label-input label-padrao" for="email">E-mail</label>
+            </div>
+            <input class="login_input input-padrao" type="email" name="email"  required>
             
-            <label class="login_label-input label-padrao" for="email">E-mail</label>
-            <input class="login_input input-padrao" type="email" required>
+            <div class="required_input-div">
+                <p id="error-message-password" class="error-message"></p>
+                <label class="login_label-input label-padrao" for="password">Senha</label>
+            </div>           
+            <input class="login_input input-padrao" type="password" name="password"  required>
             
-            <label class="login_label-input label-padrao" for="password">Senha</label>
-            <input class="login_input input-padrao" type="password" required>
-            
-            <button class="login_btn-entrar btn-padrao">Entrar</button>
+            <button class="login_btn-entrar btn-padrao" id="loginButton">Entrar</button>
             <a href="#" class="login_btn-senha">Perdeu a senha?</a>
             <p class="login_paragrafo">Ainda não possui conta?</p>
             <a class="login_btn-cadastro botao-padrao2" href="../pages/cadastro.html">Cadastre-se</a>
         </section>
 
         <footer></footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="../scripts/login.js"></script>
     </main>
 
 </body>
