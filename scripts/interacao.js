@@ -41,8 +41,15 @@ const getPosts = async () => {
     h2.textContent = post.title;
     h2.classList.add("titulo_post");
 
-    const pText = document.createElement("p");
-    pText.textContent = post.text;
+    const pText = document.createElement("div");
+    pText.innerHTML = post.text;
+
+    const children = pText.children;
+
+    for (let i = 0; i < children.length; i++) {
+      children[i].classList.add("conteudo_post");
+    }
+
     pText.classList.add("conteudo_post");
 
     const pData = document.createElement("p");
@@ -84,7 +91,6 @@ const getPosts = async () => {
 
     containerPosts.appendChild(div);
   });
-  console.log(posts);
 };
 
 getPosts();
