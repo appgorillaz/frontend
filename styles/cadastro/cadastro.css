@@ -49,6 +49,9 @@
 }
 
 @media (min-width: 1024px){
+    .main-cadastro{
+        min-height: 100vh;
+    }
     .login_container-input {
        width: 600px;
         border-radius: 10px;
