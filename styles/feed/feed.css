@@ -60,3 +60,12 @@
 }
 
 /***************************************************************************************/
+
+@media (min-width: 1024px){
+    .main-feed{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        
+    }
+}

@@ -83,3 +83,27 @@
     color: var(--cor-fundo);
 }
 
+@media (min-width: 1024px){
+    .cabecalho-evento{
+        position: static;
+
+    }
+    .nav-novoevento{
+        position: static;
+    }
+
+    .main-novoEvento{
+        
+      
+      display: flex; 
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh; 
+    }
+    .container-novoPost{
+        width: 600px;
+        height: 600px;
+        padding: 30px;
+    }
+}
+

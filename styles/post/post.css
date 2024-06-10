@@ -87,9 +87,7 @@
     
 
     }
-    .div-container-main{
-        min-height: 87vh;
-    }
+    
     
     
     
@@ -102,5 +100,9 @@
         margin:100px 0px;
         padding-left: 30px;
         border-left: solid rgba(128, 128, 128, 0.346) 5px;
+    }
+    .div-container-main{
+        
+        min-height: 100vh;
     }
 }
