@@ -31,6 +31,7 @@
 
 
 .menu-adm-container{
+    display: none;
     width: 150px;
     border-radius: 10px;
     display: flex;
@@ -55,17 +56,30 @@
     text-decoration: none;
     font-weight: bold;
 }
-.main-feed{
-    min-height: 100vh;
-}
 
 /***************************************************************************************/
 
+
+
+
+
+
 @media (min-width: 1024px){
+    .adm-section-container{
+        bottom: 95px; 
+    }
+    
+    
     .main-feed{
         display: flex;
         align-items: start;
         justify-content: center;
         
+    }
+    .body-feed{
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 }

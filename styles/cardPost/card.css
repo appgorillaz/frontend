@@ -64,6 +64,19 @@
     background-color: transparent;
     margin: 1vw;
 }
+.conteudo_post{
+    max-height: 100px; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.titulo_post{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 
 @media (min-width: 1024px){
     .container-cards{
@@ -79,7 +92,8 @@
     }
     .card_post{
         width: 400px;
+        
     }
+    
 }
-
 
