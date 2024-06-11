@@ -43,13 +43,6 @@ const getPosts = async () => {
 
     const pText = document.createElement("div");
     pText.innerHTML = post.text;
-
-    const children = pText.children;
-
-    for (let i = 0; i < children.length; i++) {
-      children[i].classList.add("conteudo_post");
-    }
-
     pText.classList.add("conteudo_post");
 
     const pData = document.createElement("p");

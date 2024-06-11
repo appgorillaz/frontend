@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/style.css">
-        
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <title>Novo evento</title>
-        <script defer src="../scripts/navBar.mjs"></script>
-        <script defer src="../scripts/interacao.js"></script>
-        <script defer src="../scripts/btnVoltar.js"></script>
     </head>
     
     <body>
@@ -34,9 +33,16 @@
 
                 <section class="container-novoPost">
                     <input type="text" placeholder="Digite um titulo" id="titulo-novoPost">
-                    <input type="text" placeholder="Digite o conteudo..." id="conteudo-NovoPost">
                     <input type="text" placeholder="Endereço do evento" id="local-NovoPost">
                     
+                    <div>
+                        <label for="start_date">Início:</label>
+                        <input type="datetime-local" id="start_date" name="start_date">
+                        
+                        <label for="end_date">Fim:</label>
+                        <input type="datetime-local" id="end_date" name="end_date">
+                    </div>
+
                     <div class="chek-container">
                         <h2>Tipo de evento:</h2>
                         <div class="container-chek-tipoEvento">
@@ -45,20 +51,15 @@
                                 <input type="checkbox" name="esportes" id="check-esportes">
                             </div>
                             <div class="div-check-eventos">
-                                <label for="eventos">Festas</label>
+                                <label for="eventos">Eventos</label>
                                 <input type="checkbox" name="eventos" id="check-eventos">
-                            </div>
+                            </div>          
                             
-                            
-                            
-                        </div>
+                        </div>                       
                         
-                        <div class="div-check-cadatroAlunos">
-                            <label for="cadastros">Deseja que os alunos se candidatem?</label>
-                            <input type="checkbox" name="cadastros" id="check-cadastros">  
-                        </div>
                         
                     </div>
+                    <p id="error-message" class="error-message"></p>
                     <div class="div-btn-novoPost">
                         <button class="btn-novoPost-decartar">descartar</button>
                         <button class="btn-novoPost-publicar">publicar</button>
@@ -93,4 +94,8 @@
             </footer>
             
         </div>
+        <script src="../scripts/navBar.mjs"></script>
+        <script src="../scripts/createEvent.js"></script>
+        <script src="../scripts/btnVoltar.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </body>
