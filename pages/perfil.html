@@ -5,12 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/style.css">
-        
-        <title>Novo evento</title>
-        <script defer src="../scripts/navBar.mjs"></script>
-        <script defer src="../scripts/interacao.js"></script>
-        <script defer src="../scripts/btnVoltar.js"></script>
-        <script defer src="../scripts/perfil.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <title>Perfil</title>
     </head>
     
     <body>
@@ -21,7 +19,7 @@
             </div>
             <section class="nome-page  page-calendario">
               <div class="nome-menu-desk_container">
-                <h1 class="titulo-page titulo-page-calendario  titulo-padrao">Calendário de eventos</h1>
+                <h1 class="titulo-page titulo-page-calendario  titulo-padrao">Perfil</h1>
                 <div class="menu-desk-nav">
                     <button id="btn-nav-desk_home">Home</button>
                     <button id="btn-nav-desk_calendario">Calendario</button>
@@ -35,29 +33,6 @@
         <main class="main-perfil">
             <section class="perfil-container">
                 <div class="perfil-info">
-                    <div class="foto-container">
-                        <!-- Input para carregar foto de perfil -->
-                        <input type="file" id="upload-foto" accept="image/*">
-                        <!-- Exibição da foto de perfil (pode ser uma imagem padrão enquanto não há foto) -->
-                        <div class="foto-wrapper">
-                            <img id="foto-perfil-preview" src="../img/icons/usuarioPerfil.svg" alt="Foto de Perfil">
-                            <!-- Ícone de lápis de edição -->
-                            <label for="upload-foto" class="edit-icon" id="edit-icon">
-                                <img src="../img/icons/Edit.svg" alt="Editar">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="container-info_perfil">
-                        <!-- Campo de texto para 'Quem sou eu' -->
-                        <div class="info info-sobre">
-                            <p id="quem-sou-eu-texto">Quem sou eu</p>
-                            <div class="edit-quem-sou-eu">
-                                <input type="text" id="quem-sou-eu-input" style="display: none;">
-                                <div class="edit-icon-sobre" id="edit-quem-sou-eu">
-                                    <img src="../img/icons/Edit.svg" alt="Editar">
-                                </div>
-                            </div>  
-                        </div>
                         <section class="section-inputs-perfil">
                             <label class="label-padrao" for="nome">Nome</label>
                             <input class="input-padrao input-perfil" type="text" name="nome"  required>
@@ -105,14 +80,6 @@
                     </div>
                 </div>
             </section>
-            
-        
-
-
-
-        
-
-
 
             <section class="nav-container">
                 <button id="btn-nav_home"><img src="../img/icons/home.svg" alt=""></button>
@@ -137,4 +104,9 @@
             <p class="copy-rodape">₢Copyright 2023 Gorillaz all Rights Reserved</p>
 
         </footer>
+        <script  src="../scripts/navBar.mjs"></script>
+        <script  src="../scripts/btnVoltar.js"></script>
+        <script  src="../scripts/perfil.js"></script>
+        <script src="../scripts/createPost.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </body>
