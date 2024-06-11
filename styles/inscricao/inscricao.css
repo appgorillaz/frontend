@@ -3,7 +3,7 @@
 .inscricao-container{
     display: flex;
     flex-direction: column;
-    margin: 25vw 8vw 0 8vw;
+    height: 600px;
 }
 
 .login_titulo{
@@ -59,7 +59,8 @@
 
 }
 .btn-cancel{
-
+    max-width: 340px;
+    width: 70%;
     background-color: var(--cor-fundo-secundaria);
     padding: 10px;
     text-align: center;
@@ -68,14 +69,26 @@
     font-weight: 400;
     letter-spacing: 1px;
     border: none;
+    color: var(--cor-fonte-primaria);
 
 }
+
 
 .botao-padrao2, .btn-padrao{
     max-width: 860px;
 }
 .cabecalho-telas-input{
     display: none;
+}
+.div-btn-inscricao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.div-btn-inscricao button{
+    max-width: 340px;
 }
 
 @media (min-width: 1024px){
@@ -85,14 +98,16 @@
     }
     .inscricao-container{
         margin: 0;
+        height: 450px;
+        margin: 30px 0;
     }  
-.main-inscricao{
-    min-height: 100vh;
-    padding: 0;
-}
-.nome-telas-input{
-    font-size: 25px;
-}
+    .main-inscricao{
+        min-height: 100vh;
+        padding: 0;
+    }
+    .nome-telas-input{
+        font-size: 25px;
+    }
 
 
     .btn-cancel{
@@ -102,7 +117,7 @@
         
     }
     .btn-cancel,.btn-confir{
-        width: 300px;
+        width: 100%;
         margin: 30px auto;
         cursor: pointer;
     }

@@ -1,23 +1,23 @@
-const isTokenExpired = (token) => {
-  if (!token) return true;
+// const isTokenExpired = (token) => {
+//   if (!token) return true;
 
-  const decoded = jwt_decode(token);
-  const currentTime = Date.now() / 1000;
+//   const decoded = jwt_decode(token);
+//   const currentTime = Date.now() / 1000;
 
-  // Verifica se o token já expirou
-  if (decoded.exp < currentTime) {
-    return true;
-  }
+//   // Verifica se o token já expirou
+//   if (decoded.exp < currentTime) {
+//     return true;
+//   }
 
-  return false;
-};
+//   return false;
+// };
 
-if (
-  !localStorage.getItem("token") ||
-  isTokenExpired(localStorage.getItem("token"))
-) {
-  window.location.href = "./pages/login.html";
-}
+// if (
+//   !localStorage.getItem("token") ||
+//   isTokenExpired(localStorage.getItem("token"))
+// ) {
+//   window.location.href = "./pages/login.html";
+// }
 
 const getPosts = async () => {
   let posts;

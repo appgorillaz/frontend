@@ -1,5 +1,5 @@
 .container-page-calendario{
-  margin-top: 220px;
+  margin-top: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
   background-color: var(--cor-fundo-secundaria);
   font-family: var(--font-principal);
   width: 85vw;
-  min-width: 330px ;
+  min-width: 300px ;
   border-radius: 10px;
   padding: 10px;
   height: 300px;
@@ -202,8 +202,8 @@
 /*filtro*/
 /*------------------------------------------------*/
 .filtro-calendario{
-  width: 90vw;
-  max-width: 600px;
+  width: 100%;
+  max-width: 620px;
   background-color: var(--cor-fundo-secundaria);
   margin: 10px;
   border-radius: 10px;
@@ -231,6 +231,10 @@
 
 .mostrar-eventos-container{
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .mostrar-evento-div{
   background-color: var(--cor-fundo-secundaria);
@@ -282,7 +286,7 @@
 }
 
   .container-page-calendario{
-    margin-top: 130px;
+    margin-top: 100px;
     max-height: 100vh;
     flex: 1;  
     justify-content: flex-start;
