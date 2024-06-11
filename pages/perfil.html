@@ -11,7 +11,7 @@
         <title>Perfil</title>
     </head>
     
-    <body>
+    <body class="body-perfil">
         <header class="cabecalho-container">
             <div class="cabecalho">
                 <h2 class="titulo-cabecalho">Gorillaz</h2>
@@ -49,29 +49,36 @@
                                 <option value="Feminino">Feminino</option>
                             </select>
                             <div class="curso-sem-container">
-                                <select class="input-padrao curso-perfil" name="curso" id="curso" required>
-                                    <option value="Gestão Empresarial">Gestão Empresarial</option>
-                                    <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
-                                    <option value="Desenvolvimento de Software Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
-                                    <option value="Ciência de Dados">Ciência de Dados</option>
-                                    <option value="Comércio Exterior">Comércio Exterior</option>
-                                    <option value="Design de Produto">Design de Produto</option>
-                                </select>
-                                <select class="input-padrao curso-perfil" name="semestre" id="semestre" required>
-                                    <option value="1">1° semestre</option>
-                                    <option value="2">2° semestre</option>
-                                    <option value="3">3° semestre</option>
-                                    <option value="4">4° semestre</option>
-                                    <option value="5">5° semestre</option>
-                                    <option value="6">6° semestre</option>
-                                </select>
+                                <div class="div-curso-flex">
+                                    <label class="label-padrao" for="ra">Curso</label>
+                                    <select class="input-padrao curso-perfil" name="curso" id="curso" required>
+                                        <option value="Gestão Empresarial">Gestão Empresarial</option>
+                                        <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
+                                        <option value="Desenvolvimento de Software Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
+                                        <option value="Ciência de Dados">Ciência de Dados</option>
+                                        <option value="Comércio Exterior">Comércio Exterior</option>
+                                        <option value="Design de Produto">Design de Produto</option>
+                                    </select>
+                                </div>
+                                <div class="div-sem-flex">
+                                    <label class="label-padrao" for="ra">Semestre</label>
+                                    <select class="input-padrao curso-perfil" name="semestre" id="semestre" required>
+                                        <option value="1">1° semestre</option>
+                                        <option value="2">2° semestre</option>
+                                        <option value="3">3° semestre</option>
+                                        <option value="4">4° semestre</option>
+                                        <option value="5">5° semestre</option>
+                                        <option value="6">6° semestre</option>
+                                    </select>
+                                </div>
                             </div>
                             <label class="label-padrao" for="periodo">Período</label>
                             <select class="input-padrao input-perfil" name="periodo" id="periodo" required>
                                 <option value="Matutino">Matutino</option>
                                 <option value="Noturno">Noturno</option>
                             </select>
-                            <a href="#" class="login_btn-senha">Alterar a senha</a>
+                            
+                            <button class=" btn-sair">Sair</button>
                            
                         </section>
                     </div>
@@ -110,3 +117,4 @@
         <script src="../scripts/createPost.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </body>
+</html>

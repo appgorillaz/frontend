@@ -16,7 +16,7 @@
 }
 
 #titulo-novoPost,#conteudo-NovoPost,#local-NovoPost{
-    width: 600px;
+    width: 70%;
     max-width: 500px;
     background-color: var(--cor-input-destaque);
     border: none;
@@ -78,32 +78,23 @@
     color: var(--cor-fonte-primaria);
 }
 
+
 .btn-novoPost-publicar{
     background-color: var(--cor-fonte-primaria);
     color: var(--cor-fundo);
 }
 
 @media (min-width: 1024px){
-    .cabecalho-evento{
-        position: static;
+   
 
-    }
-    .nav-novoevento{
-        position: static;
-    }
+    .body-novoevento-post{
+     
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
 
-    .main-novoEvento{
-        
-      
-      display: flex; 
-      justify-content: center;
-      align-items: start;
-      min-height: 100vh; 
-    }
-    .container-novoPost{
-        width: 600px;
-        height: 600px;
-        padding: 30px;
+    
     }
 }
 

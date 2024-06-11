@@ -1,18 +1,37 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const btnMaisAdm = document.querySelector('.btn-mais-adm');
-    const menuAdmContainer = document.querySelector('.menu-adm-container');
+    const sectionContainer = document.querySelector('.adm-section-container');
 
     btnMaisAdm.addEventListener('click', function() {
-        if (menuAdmContainer.classList.contains('show')) {
-            menuAdmContainer.classList.remove('show');
+        const existingMenu = document.querySelector('.menu-adm-container');
+        
+        if (existingMenu) {
+            existingMenu.classList.remove('show');
             setTimeout(() => {
-                menuAdmContainer.style.display = 'none';
-            }, 300); // Corresponde ao tempo da animação
+                existingMenu.remove();
+            }, 300);
         } else {
-            menuAdmContainer.style.display = 'flex';
+            const menuAdmContainer = document.createElement('div');
+            menuAdmContainer.classList.add('menu-adm-container');
+            
+            const novoEventoLink = document.createElement('a');
+            novoEventoLink.href = 'pages/novoEvento.html';
+            novoEventoLink.textContent = 'Novo evento';
+
+            const novoPostLink = document.createElement('a');
+            novoPostLink.href = 'pages/novoPost.html';
+            novoPostLink.textContent = 'Novo post';
+
+            menuAdmContainer.appendChild(novoEventoLink);
+            menuAdmContainer.appendChild(novoPostLink);
+
+            sectionContainer.appendChild(menuAdmContainer);
+
             setTimeout(() => {
                 menuAdmContainer.classList.add('show');
-            }, 10); // Pequeno delay para permitir a transição
+            }, 10);
         }
     });
 });
