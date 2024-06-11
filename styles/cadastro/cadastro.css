@@ -49,10 +49,7 @@
 }
 
 @media (min-width: 1024px){
-    .main-cadastro{
-        min-height: 100vh;
-        
-    }
+    
     .login_container-input {
         background-color: var(--cor-fundo);
        width: 600px;

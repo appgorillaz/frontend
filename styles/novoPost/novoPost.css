@@ -10,9 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 100px;
     gap: 20px;
+    
 }
 
 #titulo-novoPost,#conteudo-NovoPost,#local-NovoPost{
@@ -84,6 +85,32 @@
     color: var(--cor-fundo);
 }
 
+
+
+#start_date,#end_date{
+    background-color: var(--cor-input-destaque);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.div-data-evento{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 500px;;
+}
+.div-end_data, .div-start_data{
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+}
+#cke_texto-novoPost{
+    margin: 0 10px;
+    max-width: 550px;
+}
+
+
 @media (min-width: 1024px){
    
 
@@ -96,5 +123,12 @@
 
     
     }
+    .container-novoPost{
+        
+        margin-top: 120px;
+        
+        
+    }
 }
+  
 

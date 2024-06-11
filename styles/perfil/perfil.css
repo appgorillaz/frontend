@@ -2,6 +2,7 @@
 .perfil-container{
     margin-top: 200px;
     color: var(--cor-fonte-primaria);
+    height: 700px;
 }
 
 .curso-perfil{
