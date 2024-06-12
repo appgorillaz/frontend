@@ -98,10 +98,15 @@
   flex-wrap: wrap;
   background-color: transparent;
 }
+#events {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .day {
   width: 35px;
   padding: 5px;
-  height: 20px;
+  height: 25px;
   cursor: pointer;
   box-sizing: border-box;
   background-color: transparent;
@@ -113,6 +118,13 @@
   
 }
 
+.event-day {
+  background-color: var(--cor-fonte-primaria);
+  color: var(--cor-fundo);
+  border-radius: 100px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
 
 /*------------------------------------------------*/
@@ -158,6 +170,7 @@
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
+  overflow-y: auto;
 }
 
 .close-button {
@@ -315,5 +328,9 @@
     font-size: 20px;
     width: 400px;
     
+  }
+
+  .day{
+    padding: 3px;
   }
 }
