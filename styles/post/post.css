@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
     margin-left:30px;
     margin-right: 30px;
@@ -94,6 +94,8 @@
     .container-post-visitado{
         margin: 20px;
         width: 45%;
+        max-width: 600px;
+        margin-top:100px;
     }
     .comentarios-container_post{
         width: 35%;
