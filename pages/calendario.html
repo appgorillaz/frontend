@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/style.css">
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>  
   <title>Calendario</title>
-  <script defer src="../scripts/navBar.mjs"></script>
-  <script defer src="../scripts/interacao.js"></script>
+
 </head>
  
 
@@ -101,28 +99,6 @@
 
 
             <section class="mostrar-eventos-container">
-              <div class="mostrar-evento-div">
-                <div class="mostrar-evento_data">
-                  <p class="mostrar-evento_dia">8</p>
-                  <p class="mostrar-evento_mes">jan</p>
-                </div>
-                <div class="mostrar-evento_conteudo">
-                  <p class="mostrar-evento_titulo">Treino de fut</p>
-                  <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
-                </div>
-              </div>
-              <div class="mostrar-evento-div">
-                <div class="mostrar-evento_data">
-                  <p class="mostrar-evento_dia">8</p>
-                  <p class="mostrar-evento_mes">jan</p>
-                </div>
-                <div class="mostrar-evento_conteudo">
-                  <p class="mostrar-evento_titulo">Treino de fut</p>
-                  <p class="mostrar-evento_conteudo">Neste dia teremos treinos de futbol</p>
-                </div>
-              </div>
-
-
             </section>
           </div>
       </div>
@@ -156,7 +132,7 @@
     </footer>
   </div>
   <script src="../scripts/calendario.js"></script>
-
-  
+  <script src="../scripts/navBar.mjs"></script>
+  <script src="../scripts/createPost.js"></script>
 </body>
 </html>
