@@ -1,28 +1,28 @@
-// const isTokenExpired = (token) => {
-//   if (!token) return true;
+const isTokenExpired = (token) => {
+  if (!token) return true;
 
-//   const decoded = jwt_decode(token);
-//   const currentTime = Date.now() / 1000;
+  const decoded = jwt_decode(token);
+  const currentTime = Date.now() / 1000;
 
-//   // Verifica se o token já expirou
-//   if (decoded.exp < currentTime) {
-//     return true;
-//   }
+  // Verifica se o token já expirou
+  if (decoded.exp < currentTime) {
+    return true;
+  }
 
-//   return false;
-// };
+  return false;
+};
 
-// if (
-//   !localStorage.getItem("token") ||
-//   isTokenExpired(localStorage.getItem("token"))
-// ) {
-//   window.location.href = "./pages/login.html";
-// }
+if (
+  !localStorage.getItem("token") ||
+  isTokenExpired(localStorage.getItem("token"))
+) {
+  window.location.href = "./pages/login.html";
+}
 
 const getPosts = async () => {
   let posts;
   await axios
-    .get("http://localhost:8081/post", {
+    .get("http://localhost:8081/posts", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
@@ -38,7 +38,10 @@ const getPosts = async () => {
     div.classList.add("card_post");
 
     const h2 = document.createElement("h2");
-    h2.textContent = post.title;
+    const h2Link = document.createElement("a");
+    h2Link.href = `./pages/post.html?id=${post.id}`;
+    h2Link.textContent = post.title;
+    h2.appendChild(h2Link);
     h2.classList.add("titulo_post");
 
     const pText = document.createElement("div");

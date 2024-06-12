@@ -44,6 +44,24 @@
     
 }
 
+.btn-atualizar{
+    background-color: var(--cor-fonte-primaria);
+    color: var(--cor-fundo-secundaria);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+    
+}
+
+.div-btn-perfil{
+    display: flex;
+    width: 70%;
+    max-width: 487px;
+    justify-content: center;
+    gap: 15px;
+}
+
 .div-sem-flex,.div-curso-flex{
     display: flex;
     flex-direction: column;

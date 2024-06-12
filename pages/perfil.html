@@ -34,13 +34,22 @@
             <section class="perfil-container">
                 <div class="perfil-info">
                         <section class="section-inputs-perfil">
-                            <label class="label-padrao" for="nome">Nome</label>
+                            <div class="required_input-div">
+                                <p id="error-message-name" class="error-message"></p>
+                                <label class="label-padrao" for="nome">Nome</label>
+                            </div>
                             <input class="input-padrao input-perfil" type="text" name="nome"  required>
 
-                            <label class="label-padrao" for="email">E-mail</label>
+                            <div class="required_input-div">
+                                <p id="error-message-email" class="error-message"></p>
+                                <label class="label-padrao" for="email">E-mail</label>
+                            </div>
                             <input class="input-padrao input-perfil" type="email" name="email"  required>
 
-                            <label class="label-padrao" for="ra">RA</label>
+                            <div class="required_input-div">
+                                <p id="error-message-ra" class="error-message"></p>
+                                <label class="label-padrao" for="ra">RA</label>
+                            </div>
                             <input class="input-padrao input-perfil" type="text" name="ra" maxlength="13" required>
 
                             <label class="label-padrao" for="genero">Gênero</label>
@@ -78,7 +87,10 @@
                                 <option value="Noturno">Noturno</option>
                             </select>
                             
-                            <button class=" btn-sair">Sair</button>
+                            <div class="div-btn-perfil">
+                                <button class=" btn-sair">Sair</button>
+                                <button class=" btn-atualizar">Atualizar</button>
+                            </div>
                            
                         </section>
                     </div>

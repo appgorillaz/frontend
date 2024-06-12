@@ -92,10 +92,9 @@ document
       gender: genero,
       course: curso,
       period: periodo,
-      semester: semestre,
+      semester: Number(semestre),
       is_representative,
     };
-
     axios
       .post("http://localhost:8081/users/register", data)
       .then((res) => {

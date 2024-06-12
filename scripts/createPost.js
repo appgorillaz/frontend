@@ -1,23 +1,23 @@
-// const isTokenExpired = (token) => {
-//   if (!token) return true;
+const isTokenExpired = (token) => {
+  if (!token) return true;
 
-//   const decoded = jwt_decode(token);
-//   const currentTime = Date.now() / 1000;
+  const decoded = jwt_decode(token);
+  const currentTime = Date.now() / 1000;
 
-//   // Verifica se o token já expirou
-//   if (decoded.exp < currentTime) {
-//     return true;
-//   }
+  // Verifica se o token já expirou
+  if (decoded.exp < currentTime) {
+    return true;
+  }
 
-//   return false;
-// };
+  return false;
+};
 
-// if (
-//   !localStorage.getItem("token") ||
-//   isTokenExpired(localStorage.getItem("token"))
-// ) {
-//   window.location.href = "./login.html";
-// }
+if (
+  !localStorage.getItem("token") ||
+  isTokenExpired(localStorage.getItem("token"))
+) {
+  window.location.href = "./login.html";
+}
 
 CKEDITOR.replace("texto-novoPost", {
   toolbar: [
@@ -65,7 +65,7 @@ document
     };
 
     axios
-      .post("http://localhost:8081/post", data, {
+      .post("http://localhost:8081/posts", data, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
