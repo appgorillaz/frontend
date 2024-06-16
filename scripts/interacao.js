@@ -19,16 +19,19 @@ if (
   window.location.href = "./pages/login.html";
 }
 
+let posts = [];
+let page = 0;
+let hasNext = false;
 const getPosts = async () => {
-  let posts;
   await axios
-    .get("http://localhost:8081/posts", {
+    .get(`http://localhost:8081/posts?page=${page}&size=6`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     })
     .then((res) => {
-      posts = res.data;
+      posts = res.data.posts;
+      hasNext = res.data.hasNext;
     })
     .catch((err) => console.log(err));
 
@@ -39,7 +42,7 @@ const getPosts = async () => {
 
     const h2 = document.createElement("h2");
     const h2Link = document.createElement("a");
-    h2Link.href = `./pages/post.html?id=${post.id}`;
+    h2Link.href = `./pages/post.html?id=${post.postId}`;
     h2Link.textContent = post.title;
     h2.appendChild(h2Link);
     h2.classList.add("titulo_post");
@@ -90,3 +93,22 @@ const getPosts = async () => {
 };
 
 getPosts();
+
+function userReachedBottom() {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const documentHeight = document.documentElement.offsetHeight;
+  return scrollPosition >= documentHeight;
+}
+
+const divLoading = document.getElementById("div-loading");
+
+document.addEventListener("scroll", () => {
+  if (userReachedBottom() && hasNext) {
+    divLoading.style.display = "flex";
+    setTimeout(() => {
+      divLoading.style.display = "none";
+      page++;
+      getPosts();
+    }, 1000);
+  }
+});
