@@ -111,3 +111,36 @@ const validateRA = (ra) => {
   const raRefex = /^[0-9]{13}$/;
   return raRefex.test(ra);
 };
+
+document.querySelector(".btn-deletar").addEventListener("click", () => {
+  const deleteModal = document.querySelector(".delete-modal");
+  deleteModal.style.display = "flex";
+  window.scrollTo(0, 0);
+  document.body.style.overflow = "hidden";
+
+  document.getElementById("btn-cancelar").addEventListener("click", () => {
+    deleteModal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  document.getElementById("btn-deletar").addEventListener("click", () => {
+    axios
+      .delete("http://localhost:8081/users/me", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      })
+      .then(() => {
+        localStorage.removeItem("token");
+        window.location.href = "./login.html";
+      })
+      .catch((err) => {
+        console.log(err);
+        Toastify({
+          text: `Erro ao deletar conta!`,
+
+          duration: 2000,
+        }).showToast();
+      });
+  });
+});
