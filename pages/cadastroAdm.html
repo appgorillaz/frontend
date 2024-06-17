@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>cadastro</title>
+</head>
+
+<body class="body-login-cadastro">
+    <header class="header-login-cadastro">
+        <section class="nome-page cabecalho-telas-input  page-calendario">
+            <div class="nome-menu-desk_container">
+            <h1 class="titulo-page nome-telas-input titulo-padrao">Gorillaz</h1>
+        </section>
+    </header>
+    <main class="tela-container-main main-cadastro">
+        
+        <section class="cadatro_container login_container-input">
+            <p class="cadastro_msg">Fique por dentro do que rola na atlética</p>
+            <p class="cadastro_msg2">é gratis :)</p>
+            <h1 class="titulo-padrao titulo-cadastro">Cadastre-se</h1>
+
+            <div class="required_input-div">
+                <p id="error-message-name" class="error-message"></p>
+                <label class="label-padrao" for="nome">Nome</label>
+            </div>
+            <input class="input-padrao" type="text" name="nome"  required>
+
+            <div class="required_input-div">
+                <p id="error-message-email" class="error-message"></p>
+                <label class="label-padrao" for="email">E-mail</label>
+            </div>
+            <input class="input-padrao" type="email" name="email"  required>
+
+            <div class="required_input-div">
+                <p id="error-message-ra" class="error-message"></p>
+                <label class="label-padrao" for="ra">RA</label>
+            </div>
+            <input class="input-padrao" type="text" name="ra" maxlength="13" required>
+
+            
+            <label class="label-padrao" for="genero">Gênero</label> 
+            <select class="input-padrao" name="genero" id="genero" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+            
+            <label class="label-padrao" for="curso">Curso</label>
+            <select class="input-padrao" name="curso" id="curso" required>
+                <option value="Gestão Empresarial">Gestão Empresarial</option>
+                <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
+                <option value="Desenvolvimento de Software Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
+                <option value="Ciência de Dados">Ciência de Dados</option>
+                <option value="Comércio Exterior">Comércio Exterior</option>
+                <option value="Design de Produto">Design de Produto</option>
+            </select>
+
+            <label class="label-padrao" for="periodo">Período</label>
+            <select class="input-padrao" name="periodo" id="periodo" required>
+                <option value="Matutino">Matutino</option>
+                <option value="Noturno">Noturno</option>
+            </select>
+
+            <label class="label-padrao" for="semestre">Semestre</label>
+            <select class="input-padrao" name="semestre" id="semestre" required>
+                <option value="1">1º</option>
+                <option value="2">2º</option>
+                <option value="3">3º</option>
+                <option value="4">4º</option>
+                <option value="5">5º</option>
+                <option value="6">6º</option>
+            </select>
+
+            <label class="label-padrao" for="is_representative">É representante de classe?</label>
+            <input class="input-padrao" type="checkbox" name="is_representative" id="check-representative">  
+
+            <div class="required_input-div">
+                <p id="error-message-password" class="error-message"></p>
+                <label class="label-padrao" for="senha">Senha</label>
+            </div>           
+            <input class="input-padrao" type="password" name="senha"  required>
+            
+            <div class="required_input-div">
+                <p id="error-message-passwordConfirm" class="error-message"></p>
+                <label class="label-padrao" for="senha-con">Confirmar senha</label>
+            </div>         
+            <input class="input-padrao" type="password" name="senha-con"  required>
+
+            <button class="btn-padrao" id="registerButton">Registrar</button>
+            <p id="error-message" class="error-message"></p>
+            
+           
+        </section>
+
+    </main>
+    <footer class="rodape rodape-post">
+        <div class="container-redes-rodape">
+            <h3 class="titulo-rodape-redes">Nossas redes</h3>
+            <div class="div-img-redes">
+                <a href="https://www.instagram.com/atleticafateccotia/"><img src="../img/icons/Instagram.svg"></a>
+                <a href="https://www.facebook.com/atleticafateccotia"><img src="../img/icons/Facebook.svg"></a>
+                <a href="https://www.linkedin.com/company/atl%C3%A9tica-fatec-cotia/"><img src="../img/icons/LinkedIn.svg"></a>
+            </div>
+        </div>
+
+        <div>
+            
+        </div>
+        <p class="copy-rodape">₢Copyright 2023 Gorillaz all Rights Reserved</p>
+
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../scripts/validacao.js"></script>
+</body>
+
+</html>
