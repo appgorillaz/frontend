@@ -8,4 +8,6 @@ A aplicação tem como objetivo centralizar informações da atlética Gorillaz 
 
 `npm run dev` para iniciar o servidor.
 
-acessar `localhost:3000`
+Acessar `localhost:3000`
+
+Por ora, como solução temporária, para criação de perfil adm, é através do caminho `/pages/cadastroAdm.html`
