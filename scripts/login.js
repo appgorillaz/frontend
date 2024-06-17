@@ -47,7 +47,7 @@ document.getElementById("loginButton").addEventListener("click", (event) => {
       }).showToast();
       localStorage.setItem("token", res.data.token);
       setTimeout(() => {
-        window.location.href = "../feed.html";
+        window.location.href = "../index.html";
       }, 2000);
     })
     .catch((err) => {

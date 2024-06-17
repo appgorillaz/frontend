@@ -17,10 +17,10 @@ function mudarPagina(botao, pagina) {
     })
   }
 
-mudarPagina(btn_home, "../feed.html");
+mudarPagina(btn_home, "../index.html");
 mudarPagina(btn_calendario, "../pages/calendario.html")
 mudarPagina(btn_perfil, "../pages/perfil.html")
 
-mudarPagina(btnDeskHome, "../feed.html");
+mudarPagina(btnDeskHome, "../index.html");
 mudarPagina(btnDeskCalen, "../pages/calendario.html")
 mudarPagina(btnDeskPerfil, "../pages/perfil.html")

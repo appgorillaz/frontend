@@ -30,10 +30,13 @@ const getPosts = async () => {
       },
     })
     .then((res) => {
+    console.log(res)
       posts = res.data.posts;
       hasNext = res.data.hasNext;
     })
     .catch((err) => console.log(err));
+
+  console.log(posts)
 
   const containerPosts = document.querySelector(".container-cards");
   posts.forEach((post) => {
