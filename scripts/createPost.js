@@ -77,7 +77,7 @@ document
           duration: 2000,
         }).showToast();
         setTimeout(() => {
-          window.location.href = "../feed.html";
+          window.location.href = "../index.html";
         }, 2000);
       })
       .catch((err) => {
