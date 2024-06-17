@@ -40,7 +40,6 @@ document.getElementById("loginButton").addEventListener("click", (event) => {
   axios
     .post("http://localhost:8081/users/login", data)
     .then((res) => {
-      console.log(res);
       Toastify({
         text: "Login realizado com sucesso!",
 

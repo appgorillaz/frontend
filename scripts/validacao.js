@@ -94,6 +94,10 @@ document
       period: periodo,
       semester: Number(semestre),
       is_representative,
+      role:
+        window.location.pathname.split("/").pop() === "cadastroAdm.html"
+          ? "ADMIN"
+          : "USER",
     };
     axios
       .post("http://localhost:8081/users/register", data)
